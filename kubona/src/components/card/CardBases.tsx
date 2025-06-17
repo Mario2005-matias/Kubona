@@ -1,4 +1,3 @@
-import { NossasBases } from "@/Data/NossasBases";
 import Image from 'next/image'
 
 type CardProps = {
@@ -10,11 +9,11 @@ type CardProps = {
 
 export default function CardBases ({nome , local, urlImage}: CardProps) {
     return (
-        <div  className="bg-white shadow rounded-md flex flex-row gap-2 p-2">
+        <div  className="rounded-md flex flex-row gap-2 p-2">
             <Image src={urlImage} width={100} height={200} alt='' 
                     className="rounded-md" />
             <div>
-            <h3>{nome}</h3>
+            <h3 className='text-[#1F2937]'>{nome}</h3>
              <p>{local}</p>
             </div>
         </div>

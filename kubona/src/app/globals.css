@@ -2,16 +2,18 @@
 @import "tw-animate-css";
 
 :root {
-  azul: #1D4ED8;
-  azulHover: #1E40AF;
-  icones: #FACC15;
-  textoComum: #1F2937;
-  amarelo: #1D4ED8;
-  branco: #F9FAFB;
-  cinza: #1F2937;
-  fundo: #F9FAFB;
-  vermelho: #F97316;
+  --kubona-blue: #1D4ED8;
+  --kubona-dourado: #FACC15;
+  --kubona-blue-dark: #1E40AF;
+  --kubona-yellow: #FACC15;
+  --kubona-orange: #F97316;
+  --kubona-white: #F9FAFB;
+  --kubona-gray: #1F2937;
+  --kubona-dark: #1E293B;
+  --kubona-red: #DC2626;
+  --kubona-green: #22C55E;
 }
+
 
 @custom-variant dark (&:is(.dark *));
 
