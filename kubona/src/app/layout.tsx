@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-       className={`${poppins.className} min-h-screen`}
+       className={`${poppins.className} bg-[#fdfdfd] min-h-screen`}
       >
         {children}
       </body>
