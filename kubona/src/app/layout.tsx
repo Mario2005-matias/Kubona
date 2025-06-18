@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-       className={`${poppins.className} bg-[#fdfdfd] min-h-screen`}
+       className={`${poppins.className} text-[#1F2937] bg-[#fdfdfd] min-h-screen`}
       >
         {children}
       </body>
