@@ -12,7 +12,7 @@ export const saloes = [
         nome:'Enorme vila ensolarada',
         local: "Kailua-Kona, Havai",
         central: 'Vila / Casa inteira',
-        preco: 100,
+        preco: 90,
         urlImage: "/assets/salao.jpg"
     },
     {
@@ -20,7 +20,7 @@ export const saloes = [
         nome:'Enorme vila ensolarada',
         local: "Kailua-Kona, Havai",
         central: 'Vila / Casa inteira',
-        preco: 100,
+        preco: 150,
         urlImage: "/assets/salao.jpg"
     },
     {
@@ -28,7 +28,7 @@ export const saloes = [
         nome:'Enorme vila ensolarada',
         local: "Kailua-Kona, Havai",
         central: 'Vila / Casa inteira',
-        preco: 100,
+        preco: 300,
         urlImage: "/assets/salao.jpg"
     },
     {
@@ -36,7 +36,7 @@ export const saloes = [
         nome:'Enorme vila ensolarada',
         local: "Kailua-Kona, Havai",
         central: 'Vila / Casa inteira',
-        preco: 100,
+        preco: 140,
         urlImage: "/assets/salao.jpg"
     },
     {
@@ -44,7 +44,23 @@ export const saloes = [
         nome:'Enorme vila ensolarada',
         local: "Kailua-Kona, Havai",
         central: 'Vila / Casa inteira',
-        preco: 100,
+        preco: 80,
+        urlImage: "/assets/salao.jpg"
+    },  
+    {
+        id:7,
+        nome:'Enorme vila ensolarada',
+        local: "Kailua-Kona, Havai",
+        central: 'Vila / Casa inteira',
+        preco: 50,
+        urlImage: "/assets/salao.jpg"
+    },  
+    {
+        id:8,
+        nome:'Enorme vila ensolarada',
+        local: "Kailua-Kona, Havai",
+        central: 'Vila / Casa inteira',
+        preco: 90,
         urlImage: "/assets/salao.jpg"
     },  
 ]

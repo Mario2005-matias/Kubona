@@ -18,13 +18,22 @@ export default function CardSaloes({
 }: SaloesProps) {
   return (
     <div className="overflow-hidden shadow rounded-md">
-      <Image
-        src={urlImage}
-        alt={nome}
-        width={400}
-        height={300}
-        className="w-full"
-      />
+      <div className="relative">
+        <Image
+          src={urlImage}
+          alt={nome}
+          width={400}
+          height={300}
+          className="w-full"
+        />
+        <div className="absolute top-0 right-0 rounded py-2 px-2 bg-[#1F2937] flex flex-row items-center justify-center text-white">
+            <span>
+              <DollarSign className="w-4 h-4" />
+            </span>
+            <p className="text-sm">{preco}</p>
+            <p className="text-xs">/noite</p>
+          </div>
+      </div>
       <div className="flex flex-col items-start justify-center p-4 text-[#1F2937]">
         <h2 className="font-semibold text-lg mb-2">{nome}</h2>
         <div className=" w-full flex flex-row items-end justify-between">
@@ -33,22 +42,16 @@ export default function CardSaloes({
               <span>
                 <MapPin className="w-5 h-5" />
               </span>
-              <p>{local}</p>
+              <p className="text-sm">{local}</p>
             </div>
             <div className="text-sm flex flex-row gap-2 text-[#1F2937]">
               <span>
                 <Home className="w-5 h-5" />
               </span>
-              <p>{central}</p>
+              <p className="text-sm">{central}</p>
             </div>
           </div>
-          <div className="text-sm font-semibold flex flex-row items-center justify-center text-[#DC2626]">
-            <span>
-              <DollarSign className="w-5 h-5" />
-            </span>
-            <p className="text-lg ">{preco}</p>
-            /noite
-          </div>
+          
         </div>
       </div>
     </div>

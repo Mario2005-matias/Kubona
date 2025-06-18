@@ -1,5 +1,5 @@
 import { NossasBases } from "@/Data/NossasBases";
-import CardBases from "./card/CardBases";
+import CardBases from "../ui/CardBases";
 
 
 export default function NossasLocalizacoes() {

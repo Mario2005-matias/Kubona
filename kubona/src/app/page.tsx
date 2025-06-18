@@ -1,19 +1,17 @@
-import Header from "@/components/Header/Header";
-import SectionComodidades from "@/components/SectionComodidades";
-import Main from "@/components/Main";
-import NossasLocalizacoes from "@/components/NossasLocalizacoes";
-import NossosSaloes from "@/components/NossosSaloes";
-import SectionMelhorSalao from "@/components/SectionMelhorSalao";
-import SectionDestaque from "@/components/SectionDestaque";
+import Header from "@/components/Layout/Header";
+import SectionComodidades from "@/components/Layout/SectionComodidades";
+import Main from "@/components/Layout/Main";
+import NossosSaloes from "@/components/Layout/NossosSaloes";
+import SectionMelhorSalao from "@/components/Layout/SectionMelhorSalao";
+import SectionDestaque from "@/components/Layout/SectionDestaque";
 
 export default function Home() {
   return (
     <div className="">
       <Header/>
       <Main/>
-      <NossasLocalizacoes/>
-      <NossosSaloes/>
       <SectionComodidades/>
+      <NossosSaloes/>
       <SectionMelhorSalao/>
       <SectionDestaque/>
     </div>
