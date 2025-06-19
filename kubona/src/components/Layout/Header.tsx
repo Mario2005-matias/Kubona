@@ -52,7 +52,7 @@ export default function Header() {
               Agenda
             </Link>
             <Link
-              href="/contacto"
+              href="/contato"
               className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition duration-150"
             >
               Contacto
@@ -61,12 +61,12 @@ export default function Header() {
 
           <div className="hidden min-[888px]:flex flex-row items-center gap-2  ">
             <Link href="/Cadastro">
-              <Button className="bg-[#1D4ED8] hover:bg-[#1E40AF] text-white hover:duration-300">
+              <Button className="bg-[#1E293B] hover:bg-[#1E293B] text-white hover:duration-300">
                 Login
               </Button>
             </Link>
             <Link href="/Cadastro">
-              <Button className="border border-[#1D4ED8] bg-white text-[#1D4ED8] hover:bg-[#1D4ED8] hover:duration-300 hover:text-white">
+              <Button className="border border-[#1E293B] bg-white text-[#1E293B] hover:bg-[#1E293B] hover:duration-300 hover:text-white">
                 Sign Up
               </Button>
             </Link>
@@ -130,19 +130,19 @@ export default function Header() {
             Agenda
           </Link>
           <Link
-            href="/contacto"
+            href="/contato"
             className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition duration-150"
           >
             Contacto
           </Link>
           <div className="md:hidden flex flex-row gap-2">
             <Link href="/Cadastro">
-              <Button className="bg-[#1D4ED8] hover:bg-[#1E40AF] text-white hover:duration-300">
+              <Button className="bg-[#1E293B] hover:bg-[#1E293B] text-white hover:duration-300">
                 Login
               </Button>
             </Link>
             <Link href="/Cadastro">
-              <Button className="border border-[#1D4ED8] bg-white text-[#1D4ED8] hover:bg-[#1D4ED8] hover:duration-300 hover:text-white">
+              <Button className="border border-[#1E293B] bg-white text-[#1E293B] hover:bg-[#1E293B] hover:duration-300 hover:text-white">
                 Sign Up
               </Button>
             </Link>
