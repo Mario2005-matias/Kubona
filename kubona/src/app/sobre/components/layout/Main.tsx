@@ -7,7 +7,7 @@ export default function Main() {
           <h1 className="text-4xl min-sm:text-5xl font-semibold max-w-2xl">
             Sobre Nós
           </h1>
-          <h2 className="max-w-3xl my-2">
+          <h2 className="max-w-xl my-2">
             Com a Kubona, você encontra o espaço ideal para seu evento em poucos
             cliques — compare preços, veja fotos reais e confirme a reserva sem sair
             de casa.
