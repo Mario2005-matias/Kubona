@@ -23,7 +23,7 @@ export default function CardDestaque({ urlImage, preco, nome, local }: CardDesta
           <DollarSign className="w-5 h-5" />
           <span className="font-semibold text-lg">{preco}</span>/noite
         </div>
-        <p className="absolute top-3 right-6 rounded  text-xs bg-[#1E293B] text-white px-3 py-1">Verificado</p>
+        <p className="absolute top-3 right-6 rounded  text-xs bg-[#22C55E] text-white px-3 py-1">Verificado</p>
       </div>
       <div className="p-4">
         <div>

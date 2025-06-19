@@ -19,7 +19,7 @@ export default function Header() {
             <Image
               src="/assets/logo-horizontal.jpg"
               width={120}
-              height={100}
+              height={30}
               alt="Kubona empresa"
               className="flex-shrink-0"
             />
@@ -40,7 +40,7 @@ export default function Header() {
               Sobre
             </Link>
             <Link
-              href="/comunidade"
+              href="/registrar"
               className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition duration-150"
             >
               Registar salão
@@ -61,10 +61,14 @@ export default function Header() {
 
           <div className="hidden min-[888px]:flex flex-row items-center gap-2  ">
             <Link href="/Cadastro">
-              <Button className="bg-[#1D4ED8] hover:bg-[#1E40AF] text-white hover:duration-300">Login</Button>
+              <Button className="bg-[#1D4ED8] hover:bg-[#1E40AF] text-white hover:duration-300">
+                Login
+              </Button>
             </Link>
             <Link href="/Cadastro">
-              <Button className="border border-[#1D4ED8] bg-white text-[#1D4ED8] hover:bg-[#1D4ED8] hover:duration-300 hover:text-white">Sign Up</Button>
+              <Button className="border border-[#1D4ED8] bg-white text-[#1D4ED8] hover:bg-[#1D4ED8] hover:duration-300 hover:text-white">
+                Sign Up
+              </Button>
             </Link>
           </div>
 
@@ -100,43 +104,47 @@ export default function Header() {
 
       {/* Mobile menu, show/hide based on menu state */}
       <div className={`min-[888px]:hidden ${isMenuOpen ? "block" : "hidden"}`}>
-        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg">
+        <div className="px-2 pt-2 flex flex-col  pb-3 space-y-1 sm:px-3 bg-white shadow-lg">
           <Link
             href="/"
-            className="text-gray-700 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium"
+            className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition duration-150 "
           >
             Home
           </Link>
           <Link
             href="/sobre"
-            className="text-gray-700 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium"
+            className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition duration-150"
           >
             Sobre
           </Link>
           <Link
-            href="/comunidade"
-            className="text-gray-700 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium"
+            href="/registrar"
+            className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition duration-150"
           >
-            Comunidade
+            Registar salão
           </Link>
           <Link
             href="/agenda"
-            className="text-gray-700 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium"
+            className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition duration-150"
           >
             Agenda
           </Link>
           <Link
             href="/contacto"
-            className="text-gray-700 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium"
+            className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition duration-150"
           >
             Contacto
           </Link>
-          <div className="md:hidden">
+          <div className="md:hidden flex flex-row gap-2">
             <Link href="/Cadastro">
-              <Button className="bg-[#1D4ED8] hover:bg-[#1E40AF] text-black">Login</Button>
+              <Button className="bg-[#1D4ED8] hover:bg-[#1E40AF] text-white hover:duration-300">
+                Login
+              </Button>
             </Link>
             <Link href="/Cadastro">
-              <Button className="bg-white text-black">Sign Up</Button>
+              <Button className="border border-[#1D4ED8] bg-white text-[#1D4ED8] hover:bg-[#1D4ED8] hover:duration-300 hover:text-white">
+                Sign Up
+              </Button>
             </Link>
           </div>
         </div>

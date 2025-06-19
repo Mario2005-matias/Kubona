@@ -26,7 +26,7 @@ export default function CardSaloes({
           height={300}
           className="w-full"
         />
-        <div className="absolute top-0 right-0 rounded py-2 px-2 bg-[#1F2937] flex flex-row items-center justify-center text-white">
+        <div className="absolute top-0 right-0 rounded-bl-sm py-2 px-2 bg-[#1F2937] flex flex-row items-center justify-center text-white">
             <span>
               <DollarSign className="w-4 h-4" />
             </span>

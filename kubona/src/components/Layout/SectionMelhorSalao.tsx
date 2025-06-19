@@ -1,5 +1,6 @@
 import * as React from "react";
 import Image from "next/image";
+import { Heart } from "lucide-react"
 import {
   Carousel,
   CarouselContent,
@@ -19,15 +20,12 @@ const pessoas = [
 
 export default function SectionMelhorSalao() {
   return (
-    <section className="w-full py-10 px-4 md:px-10 text-[#1F2937]">
-      <div className="max-w-7xl mx-auto  p-6 rounded-xl shadow-lg">
-        <h2 className="mb-2 text-xl font-bold ">
-          Melhores salões para alugar
-        </h2>
-        <h3 className="mb-6 ">
-          As cidades e áreas mais modernas do mundo
-        </h3>
-
+    <section className="w-full px-4 md:px-10 text-[#1F2937] mt-10">
+      <div className="max-w-7xl mx-auto p-6 ">
+        <div className="w-full text-center flex flex-col items-center justify-center ">
+          <h3 className="text-sm">AS CIDADES E ÁREAS MAIS MODERNAS NO MUNDO</h3>
+          <h2 className="text-3xl font-semibold">Melhores salões para alugar - <span className="text-[#DC2626]">KUBONA</span></h2>
+        </div>
         <div className=" rounded-lg px-4 py-6">
           <Carousel className="w-full">
             <CarouselContent className="-ml-2">
@@ -36,13 +34,19 @@ export default function SectionMelhorSalao() {
                   key={pessoa.id}
                   className="pl-2 sm:basis-1/2 md:basis-1/3 lg:basis-1/4"
                 >
-                  <Image
-                    src={pessoa.urlImage}
-                    alt="Salão de eventos"
-                    width={400}
-                    height={500}
-                    className="rounded-md"
-                  />
+                  <div className="relative">
+                    <Image
+                      src={pessoa.urlImage}
+                      alt="Salão de eventos"
+                      width={400}
+                      height={500}
+                      className="rounded-md"
+                    />
+                    <div className="absolute bottom-4 w-full px-4 flex flex-row items-center justify-between text-white">
+                      <h2>Nome</h2> 
+                      <Heart className="" />
+                    </div>
+                  </div>
                 </CarouselItem>
               ))}
             </CarouselContent>
