@@ -14,7 +14,7 @@ export const SoloesDestaque = [
     urlImage: '/assets/Salao.jpg'
   },
   {
-    id: 2,
+    id: 3,
     nome: "Belo condominio na Pen Station",
     local: "Manhattan, Nova York",
     preco: 400,

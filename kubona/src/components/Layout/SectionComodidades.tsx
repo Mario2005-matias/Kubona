@@ -23,8 +23,8 @@ export default function SectionComodidades() {
     <section className="w-full h-auto flex flex-col items-center justify-center px-4 min-md:px-10 my-15">
       <div className="container">
         <div className="w-full text-center flex flex-col items-center justify-center my-10">
-          <h3 className="text-sm">OS SALÕES PARA SEUS PRÓXIMOS EVENTOS</h3>
-          <h2 className="text-3xl font-semibold">Uma Experiência Única Na <span className="text-[#DC2626]">KUBONA</span></h2>
+          <h3 className="text-sm max-[426px]:text-xs">OS SALÕES PARA SEUS PRÓXIMOS EVENTOS</h3>
+          <h2 className="text-3xl max-[530px]:text-2xl max-[353px]:text-xl font-semibold">Uma Experiência Única Na <span className="text-[#DC2626]">KUBONA</span></h2>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4 ">
           {comodidades.map((item) => (

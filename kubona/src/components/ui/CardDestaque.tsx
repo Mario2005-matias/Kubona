@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { DollarSign, StarsIcon } from "lucide-react";
+import { DollarSign } from "lucide-react";
 
 interface CardDestaque {
   urlImage: string;

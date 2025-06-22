@@ -3,12 +3,23 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import { useRouter } from "next/navigation"
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  const router = useRouter()
+  
+  const irParaPaginaLogin = () => {
+    router.push('/login')
+  }
+
+  const irParaPaginaSignUp = () => {
+    router.push('/signUp')
+  }
 
   return (
     <header className="bg-white shadow-md fixed w-full  top-0 z-50">
@@ -60,16 +71,12 @@ export default function Header() {
           </nav>
 
           <div className="hidden min-[888px]:flex flex-row items-center gap-2  ">
-            <Link href="/Cadastro">
-              <Button className="bg-[#1E293B] hover:bg-[#1E293B] text-white hover:duration-300">
+              <Button onClick={irParaPaginaLogin} className="bg-[#1E293B] hover:bg-[#1E293B] text-white hover:duration-300">
                 Login
               </Button>
-            </Link>
-            <Link href="/Cadastro">
-              <Button className="border border-[#1E293B] bg-white text-[#1E293B] hover:bg-[#1E293B] hover:duration-300 hover:text-white">
+              <Button onClick={irParaPaginaSignUp} className="border border-[#1E293B] bg-white text-[#1E293B] hover:bg-[#1E293B] hover:duration-300 hover:text-white">
                 Sign Up
               </Button>
-            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -136,16 +143,12 @@ export default function Header() {
             Contacto
           </Link>
           <div className="md:hidden flex flex-row gap-2">
-            <Link href="/Cadastro">
-              <Button className="bg-[#1E293B] hover:bg-[#1E293B] text-white hover:duration-300">
+              <Button onClick={irParaPaginaLogin} className="bg-[#1E293B] hover:bg-[#1E293B] text-white hover:duration-300">
                 Login
               </Button>
-            </Link>
-            <Link href="/Cadastro">
-              <Button className="border border-[#1E293B] bg-white text-[#1E293B] hover:bg-[#1E293B] hover:duration-300 hover:text-white">
+              <Button onClick={irParaPaginaSignUp} className="border border-[#1E293B] bg-white text-[#1E293B] hover:bg-[#1E293B] hover:duration-300 hover:text-white">
                 Sign Up
               </Button>
-            </Link>
           </div>
         </div>
       </div>

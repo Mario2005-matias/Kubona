@@ -23,8 +23,8 @@ export default function SectionMelhorSalao() {
     <section className="w-full px-4 md:px-10 text-[#1F2937] mt-10">
       <div className="max-w-7xl mx-auto p-6 ">
         <div className="w-full text-center flex flex-col items-center justify-center ">
-          <h3 className="text-sm">AS CIDADES E ÁREAS MAIS MODERNAS NO MUNDO</h3>
-          <h2 className="text-3xl font-semibold">Melhores salões para alugar - <span className="text-[#DC2626]">KUBONA</span></h2>
+          <h3 className="text-sm max-[426px]:text-xs">AS CIDADES E ÁREAS MAIS MODERNAS NO MUNDO</h3>
+          <h2 className="text-3xl max-[530px]:text-2xl max-[353px]:text-xl font-semibold">Melhores salões para alugar - <span className="text-[#DC2626]">KUBONA</span></h2>
         </div>
         <div className=" rounded-lg px-4 py-6">
           <Carousel className="w-full">

@@ -13,6 +13,9 @@
   --kubona-green: #22C55E;
 }
 
+body {
+  scroll-behavior: smooth;
+}
 
 
 @custom-variant dark (&:is(.dark *));

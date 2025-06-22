@@ -1,62 +1,62 @@
-import { DollarSignIcon } from "lucide-react";
+import { BadgeDollarSign, InfoIcon, Coins, ShieldCheck, Hotel, Headset, PlusCircle } from "lucide-react";
 const Propriedades = [
   {
     id: 1,
-    icon: <DollarSignIcon />,
+    icon: <ShieldCheck />,
     descricao:
-      "Um paraísoparticular para vocêe seus entesqueridos durantetodo o feriado.",
+      "Um paraíso particular para você e seus entes queridos durante todo o feriado.",
   },
   {
     id: 2,
-    icon: <DollarSignIcon />,
+    icon: <Coins />,
     descricao:
       "Um paraísoparticular para vocêe seus entesqueridos durantetodo o feriado.",
   },
   {
     id: 3,
-    icon: <DollarSignIcon />,
+    icon: <Headset />,
     descricao:
       "Um paraísoparticular para vocêe seus entesqueridos durantetodo o feriado.",
   },
   {
     id: 4,
-    icon: <DollarSignIcon />,
+    icon: <Hotel />,
     descricao:
       "Um paraísoparticular para vocêe seus entesqueridos durantetodo o feriado.",
   },
   {
     id: 5,
-    icon: <DollarSignIcon />,
+    icon: <BadgeDollarSign />,
     descricao:
       "Um paraísoparticular para vocêe seus entesqueridos durantetodo o feriado.",
   },
   {
     id: 6,
-    icon: <DollarSignIcon />,
+    icon: <BadgeDollarSign />,
     descricao:
       "Um paraísoparticular para vocêe seus entesqueridos durantetodo o feriado.",
   },
   {
     id: 7,
-    icon: <DollarSignIcon />,
+    icon: <BadgeDollarSign />,
     descricao:
       "Um paraísoparticular para vocêe seus entesqueridos durantetodo o feriado.",
   },
   {
     id: 8,
-    icon: <DollarSignIcon />,
+    icon: <BadgeDollarSign />,
     descricao:
-      "Um paraísoparticular para vocêe seus entesqueridos durantetodo o feriado.",
+      "Adicione seu anúncio em nossa plataforma e publique-o sem pagar nenhuma taxa.",
   },
   {
     id: 9,
-    icon: <DollarSignIcon />,
+    icon: <Headset />,
     descricao:
-      "Um paraísoparticular para vocêe seus entesqueridos durantetodo o feriado.",
+      "Oferecemos suporte 24 horas por dia, 7 dias por semana para gerenciar seu anúncio ou suas férias.",
   },
   {
     id: 10,
-    icon: <DollarSignIcon />,
+    icon: <InfoIcon />,
     descricao:
       "Um paraísoparticular para vocêe seus entesqueridos durantetodo o feriado.",
   },
@@ -67,10 +67,10 @@ export default function OqueEsperar() {
     <section className="w-full h-auto flex flex-col items-center justify-center px-4 min-md:px-10 my-8">
       <div className="container">
         <div className="w-full text-center flex flex-col items-center justify-center my-10">
-          <h3 className="text-sm">
-            PROPRIEDADES DE EVENTOS DE ALTO NÍVEL ESPERAM POR VOCÊ
+          <h3 className="text-sm max-[426px]:text-xs">
+            PROPRIEDADES PARA EVENTOS DE ALTO NÍVEL ESPERAM POR VOCÊ
           </h3>
-          <h2 className="text-3xl font-semibold">
+          <h2 className="text-3xl max-[530px]:text-2xl max-[353px]:text-xl font-semibold">
             O Que Esperar De Nossas Propriedades
           </h2>
         </div>
