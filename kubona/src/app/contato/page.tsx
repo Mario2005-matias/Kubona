@@ -37,7 +37,7 @@ export default function Contato() {
   const [mensagem, setMensagem] = useState("");
 
   const handleSend = () => {
-    console.log("Envoiu...")
+    console.log("Enviou...")
   }
  
   const handleSubmit = (e: React.FormEvent) => {
