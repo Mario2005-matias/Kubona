@@ -31,13 +31,11 @@ export default function Notfound() {
     if (nome === "" || mensagem === "") {
       alert("Preencha o formulário");
     } else {
-      console.table(nome);
-      console.table(mensagem);
       const mensagemFormatada = `${nome} ${mensagem}`;
       const numeroApoio = "+244946513242";
       const whatsappLink = `https://wa.me/${numeroApoio}?text=${encodeURIComponent(
         mensagemFormatada
-      )}`;
+      )}`
       window.open(whatsappLink, "_blanck");
     }
   };

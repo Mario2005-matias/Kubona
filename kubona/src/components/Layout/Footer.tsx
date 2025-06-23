@@ -1,6 +1,8 @@
+"use client"
 import Link from "next/link";
 import Image from "next/image";
 import  { Button } from "@/components/ui/button"
+import { useRouter } from 'next/navigation'
 import {
   Facebook,
   Twitter,
@@ -9,6 +11,10 @@ import {
   ArrowUp,
 } from "lucide-react";
 export default function Footer() {
+  const router = useRouter()
+  const handleGoToTop = () => {
+    router.push("#header")
+  }
   return (
     <footer className="w-full pt-10 flex flex-col items-center justify-between bg-[#1E293B] text-white">
       <div className="container flex flex-col items-center justify-center px-4 ">
@@ -27,20 +33,20 @@ export default function Footer() {
               processo de busca, comparação e reserva de espaços para eventos.
             </p>
             <div className="flex flex-row  gap-4">
-              <Link href="#">
+              <Link href="#" title="Facebook">
                 <Facebook />
               </Link>
-              <Link href="#">
+              <Link href="#" title="Twitter">
                 <Twitter />
               </Link>
-              <Link href="#">
+              <Link href="#" title="Linkedin">
                 <Linkedin />
               </Link>
-              <Link href="#">
+              <Link href="#" title="Instagram">
                 <Instagram />
               </Link>
             </div>
-            <Button variant={"outline"} className="mt-4">
+            <Button onClick={handleGoToTop} variant={"outline"} className="mt-4">
               <span>
                 <ArrowUp/>
               </span>
