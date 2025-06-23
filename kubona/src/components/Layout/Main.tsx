@@ -12,8 +12,8 @@ export default function Main() {
     router.push('/registrar')
   }
   return (
-    <main className="bg-[url('/assets/Salao.jpg')] w-full min-h-screen bg-cover bg-center flex flex-col items-start justify-center text-white px-8 min-md:px-10 max-[512px]:pt-20">
-          <h1 className="text-4xl max-[512px]:text-3xl max-[376px]:text-2xl font-bold max-w-2xl">
+    <main className="bg-[url('/assets/Saloes/Salao6.jpg')] bg-gray-700 w-full min-h-screen bg-cover bg-center flex flex-col items-start justify-center text-white px-8 min-md:px-10 max-[512px]:pt-20">
+          <h1 className="text-shadow-white text-4xl max-[512px]:text-3xl max-[376px]:text-2xl font-bold max-w-2xl">
             Chega de correr de salão em salão. Reserve online, com garantia e
             segurança!
           </h1>

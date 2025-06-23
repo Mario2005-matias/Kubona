@@ -12,7 +12,7 @@ export default function NossosSaloes() {
               <CardSaloes
                 nome={salao.nome}
                 local={salao.local}
-                central={salao.local}
+                central={salao.central}
                 preco={salao.preco}
                 urlImage={salao.urlImage}
               />

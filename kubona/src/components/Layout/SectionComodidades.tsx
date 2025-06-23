@@ -4,7 +4,9 @@ import {
   Snowflake,
   ParkingCircle,
   Wifi,
-  Home
+  Home, 
+  Building,
+  Umbrella
 } from "lucide-react";
 
 const comodidades = [
@@ -14,8 +16,8 @@ const comodidades = [
   { id: 4, nome: "Estacionamento", icon: <ParkingCircle /> },
   { id: 5, nome: "Wi-fi ", icon: <Wifi /> },
   { id: 6, nome: "Quarto Privado ", icon: <Home /> },
-  { id: 7, nome: "À beira-mar ", icon: <Wifi /> },
-  { id: 8, nome: "Condominios", icon: <Wifi /> },
+  { id: 7, nome: "À beira-mar ", icon: <Umbrella /> },
+  { id: 8, nome: "Condominios", icon: <Building /> },
 ];
 
 export default function SectionComodidades() {

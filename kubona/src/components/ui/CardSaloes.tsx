@@ -18,13 +18,13 @@ export default function CardSaloes({
 }: SaloesProps) {
   return (
     <div className="overflow-hidden shadow rounded-md">
-      <div className="relative">
+      <div className="relative overflow-hidden">
         <Image
           src={urlImage}
           alt={nome}
           width={400}
           height={300}
-          className="w-full"
+          className="w-full object-fill"
         />
         <div className="absolute top-0 right-0 rounded-bl-sm py-2 px-2 bg-[#1F2937] flex flex-row items-center justify-center text-white">
             <span>

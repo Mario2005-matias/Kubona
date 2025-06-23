@@ -85,7 +85,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="w-full bg-[#FACC15] text-white text-center mt-10 py-2 px-4 text-xs">
+      <div className="w-full bg-white text-black text-center mt-10 py-2 px-4 text-xs">
         <p>Desenvolvido por Mário Matias 2025</p>
       </div>
     </footer>
