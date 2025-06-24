@@ -61,12 +61,9 @@ export default function SectionMelhorSalao() {
                     />
                     <div className="absolute bg-[#00000040] bottom-0 w-full px-4 py-2 flex flex-row items-center justify-between text-white">
                       <h2>{salao.nome}</h2>
-                      <div className="flex flex-row gap-1 items-center justify-center">
+                      <div onClick={() => handleLike(salao.id)} className="flex flex-row gap-1 items-center justify-center">
                         {likes[salao.id] || 0}
-                        <FaHeart
-                          onClick={() => handleLike(salao.id)}
-                          className="text-red-500 cursor-pointer"
-                        />
+                        <FaHeart className="text-red-500 cursor-pointer"/>
                       </div>
                     </div>
                   </div>

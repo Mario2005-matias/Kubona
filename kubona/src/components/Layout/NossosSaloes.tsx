@@ -8,7 +8,7 @@ export default function NossosSaloes() {
       <div className="container">
         <div className=" gap-4 grid grid-cols-1 min-[512px]:grid-cols-2 sm:grid-cols-3  min-lg:grid-cols-4 ">
           {saloes.map((salao) => (
-            <Link href={`/salao/${salao.id}`} key={salao.id} className="mb-2">
+            <Link href={`/saloes/${salao.id}`} key={salao.id} className="mb-2">
               <CardSaloes
                 nome={salao.nome}
                 local={salao.local}

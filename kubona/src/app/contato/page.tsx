@@ -21,7 +21,7 @@ const Contatos = [
   {
     id: 1,
     icon: <PhoneCall />,
-    nome: "Contacto",
+    nome: "Telefone",
     info1: "+244 946 513 242",
     info2: "+244 946 513 242",
   },
@@ -126,7 +126,7 @@ export default function Contato() {
                 />
               </div>
               {errors.nome && (
-                <span className="text-red-500 text-sm">
+                <span className="text-red-500 text-xs">
                   {errors.nome.message}
                 </span>
               )}
@@ -147,7 +147,7 @@ export default function Contato() {
                 />
               </div>
               {errors.sobrenome && (
-                <span className="text-red-500 text-sm">
+                <span className="text-red-500 text-xs">
                   {errors.sobrenome.message}
                 </span>
               )}
@@ -168,7 +168,7 @@ export default function Contato() {
                 />
               </div>
               {errors.telefone && (
-                <span className="text-red-500 text-sm">
+                <span className="text-red-500 text-xs">
                   {errors.telefone.message}
                 </span>
               )}
@@ -190,7 +190,7 @@ export default function Contato() {
                 />
               </div>
               {errors.email && (
-                <span className="text-red-500 text-sm">
+                <span className="text-red-500 text-xs">
                   {errors.email.message}
                 </span>
               )}
@@ -212,7 +212,7 @@ export default function Contato() {
               />
             </div>
             {errors.mensagem && (
-              <span className="text-red-500 text-sm">
+              <span className="text-red-500 text-xs">
                 {errors.mensagem.message}
               </span>
             )}
