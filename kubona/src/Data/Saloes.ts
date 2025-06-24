@@ -4,16 +4,24 @@ export const saloes = [
         nome:'Salão Brilho da Manhã',
         local: "Rua da Missão, Luanda",
         central: 'Luanda, Angola',
-        preco: 100,
-        urlImage: "/assets/Saloes/salao1.jpg"
+        preco: 900,
+        urlImage: "/assets/Saloes/salao1.jpg",
+        pessoasEmPe: 0,
+        pessoasSentadas: 300,
+        garagem: 150,
+        wc: 10
     },
     {
         id:2,
         nome:'Salão Flor do Mar',
         local: "Avenida 4 de Fevereiro, Luanda",
         central: 'Luanda, Angola',
-        preco: 90,
-        urlImage: "/assets/Saloes/salao2.jpg"
+        preco: 400,
+        urlImage: "/assets/Saloes/salao2.jpg",
+        pessoasEmPe: 200,
+        pessoasSentadas: 100,
+        garagem: 50,
+        wc: 6
     },
     {
         id:3,
@@ -21,46 +29,70 @@ export const saloes = [
         local: "Rua da Marginal, Luanda",
         central: 'Luanda, Angola',
         preco: 150,
-        urlImage: "/assets/Saloes/salao3.jpg"
+        urlImage: "/assets/Saloes/salao3.jpg",
+        pessoasEmPe: 200,
+        pessoasSentadas: 164,
+        garagem: 95,
+        wc: 5
     },
     {
         id:4,
         nome:'Salão Lua de Luanda',
         local: "Avenida Eduardo Mondlane",
         central: 'Luanda, Angola',
-        preco: 300,
-        urlImage: "/assets/Saloes/salao4.jpg"
+        preco: 700,
+        urlImage: "/assets/Saloes/salao4.jpg",
+        pessoasEmPe: 100,
+        pessoasSentadas: 1000,
+        garagem: 500,
+        wc: 20
     },
     {
         id:5,
         nome:'Salão Brisa do Cabo',
         local: "Rua da Praia, Ilha do Cabo",
         central: 'Luanda, Angola',
-        preco: 140,
-        urlImage: "/assets/Saloes/salao5.jpg"
+        preco: 840,
+        urlImage: "/assets/Saloes/salao5.jpg",
+        pessoasEmPe: 2000,
+        pessoasSentadas: 300,
+        garagem: 650,
+        wc: 50
     },
     {
         id:6,
         nome:'Salão Estrela Dourada',
         local: "Avenida Hoji Ya Henda, Luanda",
         central: 'Luanda, Angola',
-        preco: 80,
-        urlImage: "/assets/Saloes/salao6.jpg"
+        preco: 180,
+        urlImage: "/assets/Saloes/salao6.jpg",
+        pessoasEmPe: 50,
+        pessoasSentadas: 300,
+        garagem: 90,
+        wc: 10
     },  
     {
         id:7,
         nome:'Salão Aurora da Baía',
         local: "Rua dos Combatentes, Luanda",
         central: 'Luanda, Angola',
-        preco: 50,
-        urlImage: "/assets/Saloes/salao8.jpg"
+        preco: 150,
+        urlImage: "/assets/Saloes/salao8.jpg",
+        pessoasEmPe: 200,
+        pessoasSentadas: 300,
+        garagem: 80,
+        wc: 15
     },  
     {
         id:8,
         nome:'Salão Toque de Rainha',
         local: "Avenida 1º de Maio, Luanda",
         central: 'Luanda, Angola',
-        preco: 90,
-        urlImage: "/assets/Saloes/salao.jpg"
+        preco: 200,
+        urlImage: "/assets/Saloes/salao.jpg",
+        pessoasEmPe: 100,
+        pessoasSentadas: 400,
+        garagem: 20,
+        wc: 10
     },  
 ]

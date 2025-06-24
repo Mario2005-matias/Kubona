@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { MapPin, Home, DollarSign } from "lucide-react";
+import Link from "next/link"
 
 type SaloesProps = {
   nome: string;
@@ -14,10 +15,11 @@ export default function CardSaloes({
   local,
   central,
   preco,
-  urlImage
+  urlImage,
 }: SaloesProps) {
   return (
     <div className="overflow-hidden shadow rounded-md">
+      
       <div className="relative overflow-hidden">
         <Image
           src={urlImage}

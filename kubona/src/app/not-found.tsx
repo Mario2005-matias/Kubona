@@ -49,7 +49,7 @@ export default function Notfound() {
     <div className="w-sreen h-screen flex flex-col items-center justify-center mx-4">
       <h1 className="text-8xl font-bold">404</h1>
       <h2 className="max-w-lg text-center">
-        Página não encontrada porque está em desenvolvimento, mas podemos te
+        Página não encontrada, mas podemos te
         ajudar no whatsApp
       </h2>
       <p>Você quer?</p>

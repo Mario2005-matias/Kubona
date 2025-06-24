@@ -26,13 +26,14 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex-shrink-0 flex flex-col items-center justify-center text-center">
+          <div className="block">
             <Image
               src="/assets/logo-horizontal.jpg"
               width={120}
-              height={30}
+              height={50}
               alt="Kubona empresa"
-              className="flex-shrink-0"
+              className="object-contain"
+              loading="eager"
             />
           </div>
 
@@ -83,7 +84,7 @@ export default function Header() {
           <div className="min-[888px]:hidden flex items-center">
             <button
               onClick={toggleMenu}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-indigo-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 "
               aria-expanded="false"
             >
               <span className="sr-only">Abrir menu principal</span>
@@ -142,7 +143,7 @@ export default function Header() {
           >
             Contacto
           </Link>
-          <div className="md:hidden flex flex-row gap-2">
+          <div className="min-[888px]:hidden flex flex-row gap-2">
               <Button onClick={irParaPaginaLogin} className="bg-[#1E293B] hover:bg-[#1E293B] text-white hover:duration-300">
                 Login
               </Button>
