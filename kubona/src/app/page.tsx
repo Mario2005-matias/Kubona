@@ -7,6 +7,12 @@ import SectionDestaque from "@/components/Layout/SectionDestaque";
 import OqueEsperar from "@/components/Layout/OqueEsperar";
 import CTA from "@/components/Layout/CTA";
 import Footer from "@/components/Layout/Footer";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Kubona || Home",
+  description: "Website para alguer se salões de eventos",
+};
 
 export default function Home() {
   return (
