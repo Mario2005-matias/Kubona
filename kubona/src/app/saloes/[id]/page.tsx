@@ -3,17 +3,14 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import CardDonoSalao from "../components/ui/CardDonoSalao";
 import { Button } from "@/components/ui/button";
-import type { Metadata } from "next";
 import type { Salao } from "@/types";
 
-export const metadata: Metadata = {
-  title: "Kubona",
-  description: "Website para alguer de salões de eventos",
-};
+type Params = Promise<{ id: string }>;
 
-export default function DetalheSalao({ params }: { params: { id: string } }) {
+export default async function DetalheSalao({ params }: { params: Params }) {
+  const { id } = await params;
   const salao: Salao | undefined = saloes.find(
-    (item) => item.id.toString() === params.id
+    (item) => item.id.toString() === id
   );
 
   if (!salao) {
@@ -34,7 +31,9 @@ export default function DetalheSalao({ params }: { params: { id: string } }) {
           <div className="bg-white rounded-md shadow p-6">
             <h2 className="font-semibold text-2xl">{salao.nome}</h2>
             <div className="my-2">
-              <p><strong>Breve descrição:</strong></p>
+              <p>
+                <strong>Breve descrição:</strong>
+              </p>
               <ul className="list-disc ml-8">
                 <li>{salao.pessoasEmPe} pessoas em pé</li>
                 <li>{salao.pessoasSentadas} pessoas sentadas</li>
@@ -54,18 +53,31 @@ export default function DetalheSalao({ params }: { params: { id: string } }) {
           <CardDonoSalao />
           <div className="bg-white shadow w-full p-5 rounded-md">
             <h2 className="text-lg font-semibold">Contactar o proprietário</h2>
+
             <form className="mt-4">
               <div className="flex flex-col items-start gap-1 mb-4">
                 <label htmlFor="email">*Email</label>
-                <input className="border-b-2 border-gray-300 w-full outline-none" type="email" placeholder="O teu email para receber respostas" />
+                <input
+                  className="border-b-2 border-gray-300 w-full outline-none"
+                  type="email"
+                  placeholder="O teu email para receber respostas"
+                />
               </div>
               <div className="flex flex-col items-start gap-1 mb-4">
                 <label htmlFor="nome">*Nome</label>
-                <input className="border-b-2 border-gray-300 w-full outline-none" type="text" placeholder="O teu nome" />
+                <input
+                  className="border-b-2 border-gray-300 w-full outline-none"
+                  type="text"
+                  placeholder="O teu nome"
+                />
               </div>
               <div className="flex flex-col items-start gap-1 mb-4">
                 <label htmlFor="mensagem">*Mensagem</label>
-                <textarea className="border-b-2 border-gray-300 w-full outline-none" rows={5} placeholder="Coloca a tua questão" />
+                <textarea
+                  className="border-b-2 border-gray-300 w-full outline-none"
+                  rows={5}
+                  placeholder="Coloca a tua questão"
+                />
               </div>
               <div className="flex flex-row gap-2 my-2">
                 <input type="checkbox" id="criarConta" />
